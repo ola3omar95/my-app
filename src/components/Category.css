@@ -1,0 +1,120 @@
+.category {
+    background: #fff;
+  }
+  
+  h1 {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .category__container {
+    display: block;
+    flex-flow: column;
+    align-items: center;
+    max-width: inherit;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .category__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+  .category__items {
+    margin-bottom: 24px;
+  }
+  
+  .category__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+  }
+  
+  .category__item__link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .category__item__pic-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+  }
+  
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+  /*.category__item__pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #171717;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }*/
+  
+  .category__item__img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    transition: all 0.2s linear;
+  }
+  
+  .category__item__img:hover {
+    transform: scale(1.1);
+  }
+  
+  /*.category__item__info {
+    padding: 20px 30px 30px;
+  }*/
+  
+  .category__item__text {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    color: #252e48;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 84%;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .category__items {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .category__item {
+      margin-bottom: 2rem;
+    }
+  }
+  
